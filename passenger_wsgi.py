@@ -1,5 +1,5 @@
 import gvsss.wsgi
-SCRIPT_NAME = '/home/zbutsxvw/myapp/gvsss'
+SCRIPT_NAME = '/home/zbutsxvw/gvsss'
 
 class PassengerPathInfoFix(object):
     """
