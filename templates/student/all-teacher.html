@@ -1,0 +1,68 @@
+{% extends 'student/basic.html' %}
+{% load static %}
+{% block content %}
+
+            <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <div class="breadcrumbs-area">
+                    <h3>All Teachers</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>All Teachers</li>
+                    </ul>
+                </div>
+                <!-- Breadcubs Area End Here -->
+                <!-- Teacher Table Area Start Here -->
+                <div class="card height-auto">
+                    <div class="card-body">
+                        <!-- <form class="mg-b-20">
+                            <div class="row gutters-8">
+                                <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                    <input type="text" placeholder="Search by ID ..." class="form-control">
+                                </div>
+                                <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                                    <input type="text" placeholder="Search by Name ..." class="form-control">
+                                </div>
+                                <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                    <input type="text" placeholder="Search by Phone ..." class="form-control">
+                                </div>
+                                <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                    <button type="submit" class="fw-btn-fill btn-gradient-yellow">SEARCH</button>
+                                </div>
+                            </div>
+                        </form> -->
+                        <div class="table-responsive">
+                            <table class="table display text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Gender</th>
+                                        <th>Subjects</th>
+                                        <th>Classes</th>
+                                        <th>Phone</th>
+                                        <th>E-mail</th>
+                                    </tr>
+                                </thead>
+                            {% for val in obj %}
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#"></a>{{val.first_name}} {{val.last_name}}</td>
+                                        <td>{{val.gender}}</td>
+                                        <td>{{val.class_name}}</td>
+                                        <td>{{ val.phone }}</td>
+                                        <td>{{ val.user }}</td>
+
+                                    </tr>
+
+
+                                </tbody>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    {% endblock %}

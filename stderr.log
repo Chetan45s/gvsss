@@ -1,0 +1,925 @@
+Internal Server Error: /index/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 19, in index
+    return render(request, 'index.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Not Found: /favicon.ico
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/css/meri.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/js/custom.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/js/custom.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/js/nav_sidebar.js
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/js/nav_sidebar.js
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/meri.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/js/custom.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/style-main.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/meri.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/meri.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/js/custom.js
+Not Found: /static/js/jquery-ui.min.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/bootstrap.min.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/js/meri.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/custom-bootstrap-margin-padding.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/meri.css
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/nav_sidebar.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/fonts/Roboto-Bold-webfont.woff
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/responsive.css
+Not Found: /static/css/style-main.css
+Not Found: /static/css/rounded-boxed.css
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /static/css/bootstrap.min.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/css/meri.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/announcement.js
+Not Found: /static/js/custom.js
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/font-awesome.min.css
+Not Found: /static/css/font-awesome-animation.min.css
+Not Found: /static/css/elegant-icons.css
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/fonts/TitilliumWeb-Regular.ttf
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/images/gvsslogo.jpeg
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/jquery-ui.min.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/responsive.css
+Not Found: /static/js/jquery-plugin-collection.js
+Not Found: /static/css/font-awesome-animation.min.css
+Not Found: /static/css/elegant-icons.css
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/navbarmenu.css
+Not Found: /static/css/rounded-boxed.css
+Not Found: /static/css/custom-color.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/css/utility-classes.css
+Not Found: /static/js/custom.js
+Not Found: /static/js/announcement.js
+Not Found: /static/fonts/TitilliumWeb-Regular.ttf
+Not Found: /static/js/announcement.js
+Not Found: /static/css/css-plugin-collections.css
+Not Found: /static/css/utility-classes.css
+Not Found: /static/css/iec-style.css
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/js/jquery-2.2.4.min.js
+Not Found: /static/css/utility-classes.css
+Not Found: /static/css/utility-classes.css
+Not Found: /static/css11/normalize.css
+Not Found: /static/css11/main.css
+Not Found: /static/css11/bootstrap.min.css
+Not Found: /static/css11/all.min.css
+Not Found: /static/fonts11/flaticon.css
+Not Found: /static/css11/fullcalendar.min.css
+Not Found: /static/css11/animate.min.css
+Not Found: /static/css11/jquery.dataTables.min.css
+Not Found: /static/js11/plugins.js
+Not Found: /static/js11/jquery-3.3.1.min.js
+Not Found: /static/js11/popper.min.js
+Not Found: /static/css11/img/figure/login-bg.jpg
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /student
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /student
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /students
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /static/css/utility-classes.css
+Not Found: /static/css/elegant-icons.css
+Not Found: /student
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /static/css/lightbox/close.png
+Not Found: /static/css/lightbox/prev.png
+Not Found: /static/css/lightbox/loading.gif
+Not Found: /static/css/lightbox/next.png
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/css/lightbox/close.png
+Not Found: /static/css/lightbox/prev.png
+Not Found: /static/css/lightbox/loading.gif
+Not Found: /static/css/lightbox/next.png
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-solid-900.ttf
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/css/lightbox/loading.gif
+Not Found: /static/css/lightbox/prev.png
+Not Found: /static/css/lightbox/next.png
+Not Found: /static/css/lightbox/close.png
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-solid-900.ttf
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-solid-900.ttf
+Internal Server Error: /guidelines/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 67, in guidelines
+    return render(request, 'guidelines.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Not Found: /favicon.ico
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/css11/img/figure/login-bg.jpg
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-solid-900.ttf
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-solid-900.ttf
+Not Found: /static/webfonts/fa-solid-900.ttf
+Internal Server Error: /guidelines/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 67, in guidelines
+    return render(request, 'guidelines.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+2021-07-03 15:48:16.045109 [UID:1591][1903456] Child process with pid: 1903503 was killed by signal: 15, core dump: 0
+Internal Server Error: /upcomingevents/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 62, in upevents
+    return render(request, 'upevents.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+Internal Server Error: /upcomingevents/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 62, in upevents
+    return render(request, 'upevents.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+2021-07-03 15:53:40.515311 [UID:1591][1903456] Child process with pid: 1923460 was killed by signal: 15, core dump: 0
+OSError: LSAPI: File error
+OSError: LSAPI: File error
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 24, in intro
+    return render(request, 'about.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Not Found: /favicon.ico
+Internal Server Error: /gallery/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 34, in galleryphotos
+    return render(request, 'gallery.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 24, in intro
+    return render(request, 'about.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Internal Server Error: /upcomingevents/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 62, in upevents
+    return render(request, 'upevents.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Internal Server Error: /gallery/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 34, in galleryphotos
+    return render(request, 'gallery.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: File error
+OSError: LSAPI: Socket read/write error
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+OSError: LSAPI: Socket read/write error
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Not Found: /static/css11/img/figure/login-bg.jpg
+OSError: LSAPI: Socket read/write error
+Not Found: /static/webfonts/fa-regular-400.woff2
+Not Found: /static/webfonts/fa-solid-900.woff2
+Not Found: /static/webfonts/fa-regular-400.woff
+Not Found: /static/webfonts/fa-solid-900.woff
+Not Found: /static/webfonts/fa-regular-400.ttf
+Not Found: /static/webfonts/fa-solid-900.ttf
+Internal Server Error: /staff/
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zbutsxvw/gvsss/main/views.py", line 40, in members
+    return render(request, 'staff.html', context)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/zbutsxvw/virtualenv/gvsss/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: basic.html 
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'gvsss.in'. You may need to add 'gvsss.in' to ALLOWED_HOSTS.
+Bad Request: /

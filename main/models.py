@@ -6,14 +6,17 @@ from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from datetime import date
 
-subcategory_choices=(('categorya', 'Category A'),
-                     ('categoryb', 'Category B'),
-                     ('categoryc', 'Category C'),
-                     ('categorybc', 'CategoryB/C')
-                     )
-category_choices = (('synopsis', 'Synopsis '),
-                     ('nonsynopsis', 'Non-Synopsis '),
-                     )
+from django.conf import settings
+
+User = settings.AUTH_USER_MODEL
+
+class_choices = (
+    ('8','8'),
+    ('9','9'),
+    ('10','10'),
+    ('11','11'),
+    ('12','12'),
+)
 
 class about(models.Model):
     intro = models.TextField(default="", null=True, blank=True)
@@ -122,30 +125,6 @@ class announcement(models.Model):
     class Meta:
         ordering = ['-pub_date','-time']
 
-class sop(models.Model):
-    title = models.CharField(max_length=80,default="")
-    Description = models.CharField(max_length=120,default="", null=True, blank=True)
-    file = models.FileField(upload_to='sops', default="")
-    pub_date = models.DateTimeField(default=now)
-
-    class Meta:
-        ordering = ['-pub_date',]
-
-    def __str__(self):
-        return self.title
-
-class certificate(models.Model):
-    title = models.CharField(max_length=80,default="")
-    Description = models.CharField(max_length=120,default="", null=True, blank=True)
-    file = models.FileField(upload_to='certificates', default="")
-    pub_date = models.DateTimeField(default=now)
-
-    class Meta:
-        ordering = ['-pub_date',]
-
-    def __str__(self):
-        return self.title
-
 class gallery(models.Model):
     images = models.ImageField(upload_to='gallery', default="")
     caption = models.CharField(max_length=500,default="", null=True, blank=True)
@@ -168,21 +147,6 @@ class gallery(models.Model):
         images = InMemoryUploadedFile(outputIoStream,'ImageField', "%s.jpg" % images.name.split('.')[0], 'image/jpeg', sys.getsizeof(outputIoStream), None)
         return images
 
-class project(models.Model):
-    author = models.CharField(max_length=1500,default="",null=True, blank=True)
-    title = models.CharField(max_length=1500,default="")
-    category =models.CharField(max_length=150, choices=category_choices, default="")
-    subcategory =models.CharField(max_length=150, choices=subcategory_choices, default="")
-    description = models.TextField(default="",null=True, blank=True)
-    file = models.FileField(upload_to='projects', default="", null=True, blank=True)
-    pub_date = models.DateTimeField(default=now)
-
-    class Meta:
-        ordering = ['-pub_date',]
-
-    def __str__(self):
-        return self.title
-
 class event(models.Model):
     title = models.CharField(max_length=1500,default="")
     description = models.TextField(default="",null=True, blank=True)
@@ -204,3 +168,58 @@ class event(models.Model):
 
     class Meta:
         ordering = ['-eventdate','time']
+
+class Student(models.Model):
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=500,null=True,blank=True)
+    last_name = models.CharField(max_length=500,null=True,blank=True)
+    roll_no = models.CharField(max_length=500,null=True,blank=True)
+    gender = models.CharField(max_length=500,null=True,blank=True)
+    date_of_birth = models.CharField(max_length=500,null=True,blank=True)
+    phone = models.CharField(max_length=500,null=True,blank=True)
+    address = models.TextField(null=True,blank=True)
+    father_name = models.CharField(max_length=500,null=True,blank=True)
+    mother_name = models.CharField(max_length=500,null=True,blank=True)
+    class_name = models.CharField(max_length=500,choices=class_choices,null=True,blank=True)
+    profile_pic = models.ImageField(upload_to="student_profile_pics",null=True,blank=True)
+    bio = models.CharField(max_length=500,null=True,blank=True)
+
+    def save(self, *args, **kwargs):
+        super(Student, self).save(*args, **kwargs)
+
+        img = Image.open(self.profile_pic.path)
+
+        if img.height > 300 or img.width > 300:
+            output_size = (300,300)
+            img.thumbnail(output_size)
+            img.save(self.profile_pic.path)
+
+    def __str__(self):
+        return f"{self.user}"
+
+class Teacher(models.Model):
+    
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=500,null=True,blank=True)
+    last_name = models.CharField(max_length=500,null=True,blank=True)
+    gender = models.CharField(max_length=500,null=True,blank=True)
+    phone = models.CharField(max_length=500,null=True,blank=True)
+    class_name = models.CharField(max_length=500,choices=class_choices,null=True,blank=True)
+
+    def __str__(self):
+        return f"{self.user}"
+
+class ClassLink(models.Model):
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date_and_time = models.CharField(max_length=500,null=True,blank=True)
+    topic = models.CharField(max_length=500,null=True,blank=True)
+    link = models.CharField(max_length=500,null=True,blank=True)
+    class_name = models.CharField(max_length=500,choices=class_choices,null=True,blank=True)
+    subject =  models.CharField(max_length=500,null=True,blank=True)
+
+    def __str__(self):
+        return f"{self.user}"
+    
+    

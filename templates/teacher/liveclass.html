@@ -1,0 +1,70 @@
+{% extends 'teacher/basic.html' %}
+{% load static %}
+{% block content %}
+
+             <div class="dashboard-content-one">
+                <!-- Breadcubs Area Start Here -->
+                <div class="breadcrumbs-area">
+
+                    <ul>
+                        <li>
+                            <a href="/teacher/">Home</a>
+                        </li>
+                        <li>Share Live Class Link</li>
+                    </ul>
+                </div>
+                <!-- Breadcubs Area End Here -->
+                <!-- Admit Form Area Start Here -->
+                <div class="card height-auto">
+                    <div class="card-body">
+
+                        <form method="POST" class="new-added-form">
+                        {% csrf_token %}
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label for="id_topic">Topic *</label>
+                                    <input type="text" name = "topic" id="id_topic" maxlength="500" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label for="id_link">Class Link *</label>
+                                    <input type="text" name = "link" id="id_link" maxlength="500" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label for="id_class_name">Class *</label>
+                                    <select name="class_name" id="id_class_name" class="select2">
+                                        <option value="">Please Select Class *</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label for="id_subject">Subject *</label>
+                                    <input type="text" name="subject" id="id_subject" maxlength="500" placeholder="" class="form-control">
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                    <label for="id_date_and_time">Date and Time *</label>
+                                    <input
+                                                type="text"
+                                                name="date_and_time"
+                                                placeholder="dd/mm/yyyy hh:mm"
+                                                maxlength="500"
+                                                id="id_date_and_time"
+                                                class="form-control air-datepicker"
+                                                data-position='bottom right'>
+                                    <i class="far fa-calendar-alt"></i>
+                                </div>
+
+                                <div class="col-12 form-group mg-t-8">
+                                    <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Post</button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+{% endblock %}

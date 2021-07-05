@@ -1,95 +1,86 @@
-{% extends 'student/basic.html '%}
+{% extends 'student/basic.html' %}
 {% load static %}
 {% block content %}
-        
-           
+
+
             <!-- Sidebar Area End Here -->
             <div class="dashboard-content-one">
                 <!-- Breadcubs Area Start Here -->
                 <div class="breadcrumbs-area">
-                    
+
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="/student/">Home</a>
                         </li>
-                        <li>Student Details</li>
+                        <li>My Profile</li>
                     </ul>
                 </div>
                 <!-- Breadcubs Area End Here -->
                 <!-- Student Details Area Start Here -->
                 <div class="card height-auto">
                     <div class="card-body">
-                        
+
                         <div class="single-info-details">
-                            <div class="item-img">
-                                <img src="{% static 'img11/figure/student1.jpg' %}" alt="student">
-                            </div>
+                            {% comment %} <div class="item-img">
+                                <img src={{ obj.profile_pic.url }} alt="student">
+                            </div> {% endcomment %}
                             <div class="item-content">
                                 <div class="header-inline item-header">
-                                    <h3 class="text-dark-medium font-medium">Jessia Rose</h3>
+                                    <h3 class="text-dark-medium font-medium">{{ obj.first_name}} {{ obj.last_name}}</h3>
                                     <div class="header-elements">
                                         <ul>
-                                            <li><a href="/student/editdetails/"><i class="far fa-edit"></i></a></li>
+                                            <li><a href="/editdetails_student/"><i class="far fa-edit"></i></a></li>
                                             <li><a href="#"><i class="fas fa-download"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <p>Aliquam erat volutpat. Curabiene natis massa sedde lacu stiquen sodale 
-                                word moun taiery.Aliquam erat volutpaturabiene natis massa sedde  sodale 
-                                word moun taiery.</p>
+                                <p>{{ obj.bio }}</p>
                                 <div class="info-table table-responsive">
                                     <table class="table text-nowrap">
                                         <tbody>
                                             <tr>
                                                 <td>Name:</td>
-                                                <td class="font-medium text-dark-medium">Jessia Rose</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.first_name}} {{ obj.last_name}}</td>
                                             </tr>
+                                            
                                             <tr>
                                                 <td>Gender:</td>
-                                                <td class="font-medium text-dark-medium">Female</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.gender }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Father Name:</td>
-                                                <td class="font-medium text-dark-medium">Steve Jones</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mother Name:</td>
-                                                <td class="font-medium text-dark-medium">Naomi Rose</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Date Of Birth:</td>
-                                                <td class="font-medium text-dark-medium">07.08.2016</td>
-                                            </tr>
-                                           
-                                            <tr>
-                                                <td>Father Occupation:</td>
-                                                <td class="font-medium text-dark-medium">Graphic Designer</td>
-                                            </tr>
-                                            <tr>
-                                                <td>E-mail:</td>
-                                                <td class="font-medium text-dark-medium">jessiarose@gmail.com</td>
-                                            </tr>
-                                           
-                                            <tr>
-                                                <td>Class:</td>
-                                                <td class="font-medium text-dark-medium">2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Section:</td>
-                                                <td class="font-medium text-dark-medium">Pink</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Roll:</td>
-                                                <td class="font-medium text-dark-medium">10005</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Address:</td>
-                                                <td class="font-medium text-dark-medium">House #10, Road #6, Australia</td>
+                                                <td>E-Mail:</td>
+                                                <td class="font-medium text-dark-medium">{{ user.email }}</td>
                                             </tr>
                                             <tr>
                                                 <td>Phone:</td>
-                                                <td class="font-medium text-dark-medium">+ 88 98568888418</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.phone }}</td>
                                             </tr>
+                                            <tr>
+                                                <td>Class:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.class_name }}th</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Roll No:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.roll_no }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Father Name:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.ffather_name }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mother Name:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.mother_name }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date Of Birth:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.date_of_birth }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address:</td>
+                                                <td class="font-medium text-dark-medium">{{ obj.address }}</td>
+                                            </tr>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -97,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-        
+
 {% endblock %}
